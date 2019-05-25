@@ -109,20 +109,26 @@ hr{
     background-color: #ffffff;
     margin-bottom: 10px;
 }
-.list{
-    overflow: hidden;
+.content li{
+    height: 36px;
 }
-.list li{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.list span{
-    position: relative;
-    line-height: 1.5;
+.riqi{
+    color:#73777a ;
+    font-size: 17px;
     padding-right: 40px;
-    color: #d8dcdd;
+    position: relative;
 }
+.riqi::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border: 2px solid #73777a;
+    border-radius: 50%;
+    position: absolute;
+    left: 95px;
+    top: 3px;
+}
+
 
 /*底部开始*/
 footer {
