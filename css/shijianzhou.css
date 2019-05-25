@@ -96,8 +96,7 @@ hr{
     position: absolute;
     z-index: 1;
     right: 20px;
-    top: 75px;
-
+    top: 70px;
 }
 
 .subject h2{
@@ -119,6 +118,7 @@ hr{
 }
 .content li{
     height: 36px;
+    padding-left: 10px;
 }
 .riqi{
     color:#73777a ;
@@ -130,13 +130,25 @@ hr{
     content: "";
     width: 12px;
     height: 12px;
-    border: 2px solid #73777a;
+    border: 2px solid #8f9396;
+    background: #8f9396;
     border-radius: 50%;
     position: absolute;
-    left: 95px;
+    left: 102px;
     top: 3px;
 }
-
+.timu{
+    position: relative;
+}
+.timu:before{
+    content: "";
+    width: 3px;
+    height: 36px;
+    background: #8f9396;
+    position: absolute;
+    left: -23px;
+    top: -8px;
+}
 
 /*底部开始*/
 footer {
