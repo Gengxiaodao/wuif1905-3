@@ -80,6 +80,13 @@ hr{
     margin: 0;
     background: #fff143
 }
+.shengqishi{
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    right: 159px;
+    top: 92px;
+}
 .subject{
     width:1200px;
     height: auto;
@@ -104,6 +111,7 @@ hr{
     border-radius: 50%;
 }
 .file{
+    width: 450px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
