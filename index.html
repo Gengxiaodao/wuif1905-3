@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>耿昊个人博客</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/animate.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <style >
     .headerBox h1 a{
@@ -28,7 +30,7 @@
 <hr>
 <div class="header">
     <div class="headerBox">
-        <h1><a href="./index.html">耿昊个人博客</a></h1>
+        <h1><a href="./index.html" id="home">耿昊个人博客</a></h1>
         <ul class="nav">
             <li class="shouye"><a href="./index.html" style="color:#fff143">网站首页</a></li>
             <li><a href="./bokeriji.html">博客日记</a></li>
@@ -43,16 +45,19 @@
 </div>
 <div class="mid">
     <div class="midBox">
-        <li class="slide" ><a href="" target="_blank"><img src="./image/megg.jpg" alt="" ></a></li>
-        <li class="slide" ><a href=""  target="_blank"><img src="./image/cityofsky.jpg" alt=""  ></a></li>
-        <li class="slide" ><a href=""  target="_blank"><img src="./image/train.jpg" alt=""  ></a></li>
+        <ul class="midImg">
+            <li><a href=""><img src="./image/cityofsky.jpg" alt=""></a> </li>
+            <li><a href=""><img src="./image/megg.jpg" alt=""></a> </li>
+            <li><a href=""><img src="./image/train.jpg" alt=""></a> </li>
+        </ul>
         <div class="bLeft" data-target="prev"></div>
         <div class="bRight" data-target="next"></div>
-        <div class="bBottom">
+        <ul class="bBottom">
+            <li class="hot"></li>
             <li></li>
             <li></li>
-            <li></li>
-        </div>
+        </ul>
+
     </div>
     <ul class="high">
         <li class="word">
@@ -100,11 +105,11 @@
 <div class="mid2">
     <div class="midBox2">
         <ul class="navigation">
-            <h2><a href="">官方品牌专区</a></h2>
-            <h2><a href="">职业第一人</a></h2>
-            <h2><a href="">媒体资讯</a></h2>
-            <h2><a href="">精彩赛事</a></h2>
-            <h2><a href="">资料百科</a></h2>
+            <h2><a >官方品牌专区</a></h2>
+            <h2><a >职业第一人</a></h2>
+            <h2><a >媒体资讯</a></h2>
+            <h2><a >精彩赛事</a></h2>
+            <h2><a >资料百科</a></h2>
         </ul>
         <ul class="imgLeft">
             <a href="http://dnf.qq.com/cp/a20170426land/index.htm?e_code=397043&idataid=202701" target="_blank"><img src="./image/suming.jpg" alt=""></a>
@@ -246,7 +251,7 @@
                         <a href="http://dnf.yzz.cn/gl/201903/1559857.shtml" target="_blank" style="color: black">技能全脱手，计生终幻神！机械之灵了解一下？</a>
                     </h3>
                     <a href="http://dnf.yzz.cn/gl/201903/1559857.shtml" target="_blank">
-                        <img src="./image/Machinist.png" alt="">
+                        <img  src="./image/Machinist.png" alt="" class="lazyLoad" >
                     </a>
                     <p class="text">面对如此优厚的冲级活动，新角色的职业选择自然成为了重中之重。而现在就有这么一个职业，技能全脱手，有爆发，有续航，有强控，除了不会加血之外几乎毫无缺点，她就是小编要向各位勇士推荐的机械之灵。</p>
                     <b class="day">
@@ -266,7 +271,7 @@
                         <a href="https://www.gamemei.com/dnf/72631.html" target="_blank" style="color: black">DNF海伯伦圣耀B套完美的毕业 三位神豪女大枪</a>
                     </h3>
                     <a href="https://www.gamemei.com/dnf/72631.html" target="_blank">
-                        <img src="./image/Launcher.jpg" alt="">
+                        <img src="./image/Launcher.jpg" alt=""  class="lazyLoad">
                     </a>
                     <p class="text">天界职业中，女大枪作为铿锵玫瑰，自然备受青睐。而国服，有三大超强的女大枪，装备打造程度都属于一流的层次，在女大枪职业中，几乎没有遇到，比这三位女大枪装备还要强的。</p>
                     <b class="day">
