@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/animate.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script src="./js/jquery.lazyload.min.js"></script>
+    <script src="./js/axjz.js"></script>
 </head>
 <style >
     .headerBox h1 a{
@@ -46,9 +49,9 @@
 <div class="mid">
     <div class="midBox">
         <ul class="midImg">
-            <li><a href=""><img src="./image/cityofsky.jpg" alt=""></a> </li>
-            <li><a href=""><img src="./image/megg.jpg" alt=""></a> </li>
-            <li><a href=""><img src="./image/train.jpg" alt=""></a> </li>
+            <li><a href=""><img src="./image/cityofsky.jpg" alt="" class="dnf"></a> </li>
+            <li><a href=""><img src="./image/megg.jpg" alt="" class="dnf"></a> </li>
+            <li><a href=""><img src="./image/train.jpg" alt="" class="dnf"></a> </li>
         </ul>
         <div class="bLeft" data-target="prev"></div>
         <div class="bRight" data-target="next"></div>
@@ -62,13 +65,13 @@
     <ul class="high">
         <li class="word">
             <a href="https://dnf.qq.com/cp/a20190523version/?ADTAG=pc.off.web.main.top&e_code=475782&idataid=262699" target="_blank">
-                <img src="./image/darkboss.jpg" alt="起源·第五季·│陆│">
+                <img data-original="./image/darkboss.jpg" alt="起源·第五季·│陆│" class="lazy">
                 <p>起源 · 第五季 · │陆│</p>
             </a>
         <li>
         <li class="word">
             <a href="https://dnf.qq.com/act/a2017world/" target="_blank">
-                <img src="./image/prueboss.jpg" alt="&lt;赫尔德の密室&gt;DNF世界观设定站">
+                <img data-original="./image/prueboss.jpg" alt="&lt;赫尔德の密室&gt;DNF世界观设定站" class="lazy">
                 <p>&lt;赫尔德の密室&gt;DNF世界观设定站</p>
              </a>
         <li>
@@ -112,8 +115,8 @@
             <h2><a >资料百科</a></h2>
         </ul>
         <ul class="imgLeft">
-            <a href="http://dnf.qq.com/cp/a20170426land/index.htm?e_code=397043&idataid=202701" target="_blank"><img src="./image/suming.jpg" alt=""></a>
-            <a href="https://v.qq.com/x/page/y0796pm8pqe.html?e_code=450341&idataid=238218"target="_blank"><img src="./image/jolin3.jpg" alt=""></a>
+            <a href="http://dnf.qq.com/cp/a20170426land/index.htm?e_code=397043&idataid=202701" target="_blank"><img data-original="./image/suming.jpg" alt="" class="lazy"></a>
+            <a href="https://v.qq.com/x/page/y0796pm8pqe.html?e_code=450341&idataid=238218"target="_blank"><img data-original="./image/jolin3.jpg" alt="" class="lazy"></a>
         </ul>
         <ul class="newslist">
             <li><i></i><a href="https://dnf.qq.com/act/a20180928collect/#firstPage" title="[品牌]阿拉德创世季 国创·新篇" target="_blank">[品牌]阿拉德创世季 国创·新篇</a><p>创世季“国创·新篇”，鼓励勇士在游戏中弘扬优秀的中国传统文化，为国风传承助力，为DNF开启国创新篇章！勇士们可以将DNF结合经典的中国文化、国风视觉元素，或者是勇士所在家乡的传统艺术，进行各种各样的创作。让勇士们一起，为未来的DNF中加入更多的中国特色吧！</p></li>
@@ -170,7 +173,7 @@
 
                 <li class="item">
                     <a href="http://dnf.qq.com/cp/a20180619dress/" target="_blank" class="picture">
-                        <img src="./image/AdventofGod.jpg" alt="">
+                        <img data-original="./image/AdventofGod.jpg" alt="" class="lazy">
                     </a>
                     <b>
                         十一期稀有装扮“天神御临”震撼登场 国服原创 典雅端庄
@@ -181,7 +184,7 @@
                 </li>
                 <li class="item">
                     <a href="http://dnf.qq.com/cp/a20170622sky/" target="_blank" class="picture">
-                        <img src="./image/Ninedayfrost.jpg" alt="">
+                        <img data-original="./image/Ninedayfrost.jpg" alt="" class="lazy">
                     </a>
                     <b>
                         “九天霜华”银河与烈曜的交织，迸发最耀眼的光芒
@@ -192,7 +195,7 @@
                 </li>
                 <li class="item">
                     <a href="http://dnf.qq.com/cp/a20160616avatar/" target="_blank" class="picture">
-                        <img src="./image/Tianyu%20night%20Hua.jpg" alt="">
+                        <img data-original="./image/Tianyu%20night%20Hua.jpg" alt="" class="lazy">
                     </a>
                     <b>
                         “天羽夜华”套装震撼登场。金色的奢华与暗红的霸气
@@ -203,7 +206,7 @@
                 </li>
                 <li class="item">
                     <a href="http://dnf.qq.com/act/a20120615xyzb/" target="_blank" class="picture">
-                        <img src="./image/Pluto%20light%20feather.jpg" alt="">
+                        <img data-original="./image/Pluto%20light%20feather.jpg" alt="" class="lazy">
                     </a>
                     <b>
                         “冥光天羽”套稀有装扮，黑与白的鲜明对比纯色调的完美契合
@@ -214,7 +217,7 @@
                 </li>
                 <li class="item">
                     <a href="http://dnf.qq.com/act/a20110627avatar/ " target="_blank" class="picture">
-                        <img src="./image/War%20Spirit%20Dance.jpg" alt="">
+                        <img data-original="./image/War%20Spirit%20Dance.jpg" alt="" class="lazy">
                     </a>
                     <b>
                         “战舞天灵”套华丽君临，高贵华丽，王者本色
@@ -225,7 +228,7 @@
                 </li>
                 <li class="item">
                     <a href="http://dnf.qq.com/webplat/info/35/84/156/201006/65353.shtml" target="_blank" class="picture">
-                        <img src="./image/Wingsofthesky.jpg" alt="">
+                        <img data-original="./image/Wingsofthesky.jpg" alt="" class="lazy">
                     </a>
                     <b>
                         “苍穹之翼”套强档推出，奢华外观魅力难挡超强属性王者象征
@@ -239,7 +242,7 @@
 
         <div class="photo">
             <a href="https://dnf.qq.com/act/a20181102creative/" target="_blank">
-                <img src="./image/wrap.jpg" alt="">
+                <img data-original="./image/wrap.jpg" alt="" class="lazy">
             </a>
         </div>
         <div class="blog">
@@ -251,7 +254,7 @@
                         <a href="http://dnf.yzz.cn/gl/201903/1559857.shtml" target="_blank" style="color: black">技能全脱手，计生终幻神！机械之灵了解一下？</a>
                     </h3>
                     <a href="http://dnf.yzz.cn/gl/201903/1559857.shtml" target="_blank">
-                        <img  src="./image/Machinist.png" alt="" class="lazyLoad" >
+                        <img data-original="./image/Machinist.png" alt="" class="lazy" >
                     </a>
                     <p class="text">面对如此优厚的冲级活动，新角色的职业选择自然成为了重中之重。而现在就有这么一个职业，技能全脱手，有爆发，有续航，有强控，除了不会加血之外几乎毫无缺点，她就是小编要向各位勇士推荐的机械之灵。</p>
                     <b class="day">
@@ -271,7 +274,7 @@
                         <a href="https://www.gamemei.com/dnf/72631.html" target="_blank" style="color: black">DNF海伯伦圣耀B套完美的毕业 三位神豪女大枪</a>
                     </h3>
                     <a href="https://www.gamemei.com/dnf/72631.html" target="_blank">
-                        <img src="./image/Launcher.jpg" alt=""  class="lazyLoad">
+                        <img data-original="./image/Launcher.jpg" alt=""  class="lazy">
                     </a>
                     <p class="text">天界职业中，女大枪作为铿锵玫瑰，自然备受青睐。而国服，有三大超强的女大枪，装备打造程度都属于一流的层次，在女大枪职业中，几乎没有遇到，比这三位女大枪装备还要强的。</p>
                     <b class="day">
@@ -290,7 +293,7 @@
                         <a href="http://dnf.yzz.cn/gl/201904/1566216.shtml" target="_blank" style="color: black">代号：希望谁刷的最快？拔刀流神教了解一下！</a>
                     </h3>
                     <a href="http://dnf.yzz.cn/gl/201904/1566216.shtml" target="_blank">
-                        <img src="./image/soulcalibur.jpg" alt="">
+                        <img data-original="./image/soulcalibur.jpg" alt="" class="lazy">
                     </a>
                     <p class="text">作为换装打造地图，代号：希望的难度算不上高，即使是身穿基础装备的勇士也能够十分顺利的通关，但要论谁最快，还得数那个号称“身披六把剑的吊机”——剑魂兄了！</p>
                     <b class="day">
@@ -309,7 +312,7 @@
                         <a href="http://dnf.uuu9.com/201812/1501009.shtml" target="_blank" style="color: black">【入坑指南】玩驱魔前你必须知道的那些事</a>
                     </h3>
                     <a href="http://dnf.uuu9.com/201812/1501009.shtml" target="_blank">
-                        <img src="./image/Exorcist.jpg" alt="">
+                        <img data-original="./image/Exorcist.jpg" alt="" class="lazy">
                     </a>
                     <p class="text">联合法驱天尊和B叔做了一期关于驱魔的入坑指南, 用B叔的话就是: 力驱目前是比较优秀的职业。综合辅助能力强, 有三速有控制, 氪金收益高, 团本表现亮眼, 技能POSE帅炸天, 必须立即创建角色。</p>
                     <b class="day">
@@ -328,7 +331,7 @@
                         <a href="http://dnf.uuu9.com/201904/1512568.shtml" target="_blank" style="color: black">漫游: 在“疯狂屠戮”中享受掠天之翼的威力吧</a>
                     </h3>
                     <a href="http://dnf.uuu9.com/201904/1512568.shtml" target="_blank">
-                        <img src="./image/timg.jpg" alt="">
+                        <img data-original="./image/timg.jpg" alt="" class="lazy">
                     </a>
                     <p class="text">大家好，本期为大家带来的是全职业技能分析漫游篇。相信有很多玩家对这个职业是又爱又恨。如此帅气的技能，衔接无缝的连招，却搭配上有些令人汗颜的伤害，请问何时能加强漫游?</p>
                     <b class="day">
@@ -351,7 +354,7 @@
            <h2 class="tittle">&nbsp;&nbsp;点击排行</h2>
             <section class="picture">
                 <a href="http://dnf.uuu9.com/201904/1512568.shtml" target="_blank">
-                    <img src="./image/manyou.jpg" alt="">
+                    <img data-original="./image/manyou.jpg" alt="" class="lazy">
                     <span>漫游: 在“疯狂屠戮”中享受掠天之翼的威力吧</span>
                 </a>
             </section>
@@ -396,44 +399,44 @@
             <h2 class="tittle">&nbsp;&nbsp;站长推荐</h2>
             <section class="picture">
                 <a href="https://dnf.qq.com/v/detail.shtml?e_code=417445&iContentId=257862&idataid=216083" target="_blank">
-                    <img src="./image/jolin2.jpg" alt="">
+                    <img data-original="./image/jolin2.jpg" alt="" class="lazy">
                 </a>
             </section>
             <ul class="">
                 <li>
                     <a href="http://dnf.yzz.cn/gl/201904/1566216.shtml" target="_blank">
-                        <i><img src="./image/soulcalibur.jpg" alt=""></i>
+                        <i><img data-original="./image/soulcalibur.jpg" alt="" class="lazy"></i>
                         <p>代号:希望谁刷的最快?拔刀流神教了解一下！</p>
                     </a>
                 </li>
                 <li>
                     <a href="http://baijiahao.baidu.com/s?id=1598794481955200070&wfr=spider&for=pc" target="_blank">
-                        <i><img src="./image/darkboss.jpg" alt=""></i>
+                        <i><img data-original="./image/darkboss.jpg" alt="" class="lazy"></i>
                         <p>为什么说4月26日是西装打团日？</p>
                     </a>
                 </li>
                 <li>
                     <a href="http://dnf.qq.com/cp/a20160616avatar/l" target="_blank">
-                        <i><img src="./image/Tianyu%20night2.jpg" alt=""></i>
+                        <i><img data-original="./image/Tianyu%20night2.jpg" alt="" class="lazy"></i>
                         <p>“天羽夜华”套装震撼登场。金色的奢华与暗红的霸气</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://dnf.qq.com/cp/a20190509gift/" target="_blank">
-                        <i><img src="./image/biaobai.png" alt=""></i>
+                        <i><img data-original="./image/biaobai.png" alt="" class="lazy"></i>
                         <p>心动恋语礼包 心动一刻只在520当天</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://dnf.qq.com/web2015/pic.shtml" target="_blank">
-                        <i><img src="./image/cityofsky.jpg" alt=""></i>
+                        <i><img data-original="./image/cityofsky.jpg" alt="" class="lazy"></i>
                         <p>壁纸时装漫画连载，原画同人馆</p>
                     </a>
                 </li>
             </ul>
         </div>
         <div class="Propaganda">
-            <a href="https://dnf.qq.com/cp/a20190423run/?e_code=473936&idataid=261032" target="_blank"><img src="./image/qiandao.jpg" alt=""></a>
+            <a href="https://dnf.qq.com/cp/a20190423run/?e_code=473936&idataid=261032" target="_blank"><img data-original="./image/qiandao.jpg" alt="" class="lazy"></a>
         </div>
         <div class="guess">
             <h2 class="tittle">&nbsp;&nbsp;猜你喜欢</h2>
@@ -475,7 +478,7 @@
             </ul>
         </div>
         <div class="Propaganda">
-            <a href="https://dnf.qq.com/cp/a20190423forward/?e_code=473937&idataid=261033" target="_blank"><img src="./image/qiandao02.jpg" alt=""></a>
+            <a href="https://dnf.qq.com/cp/a20190423forward/?e_code=473937&idataid=261033" target="_blank"><img data-original="./image/qiandao02.jpg" alt="" class="lazy"></a>
         </div>
         <div class="link">
             <h2 class="tittle">&nbsp;&nbsp;友情链接</h2>
